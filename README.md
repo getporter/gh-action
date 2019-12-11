@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Setup Porter
-      uses: jeremyrickard/porter-gh-action@master
+      uses: deislabs/porter-gh-action@master
     - uses: azure/docker-login@v1
       name: Docker Login
       with:
