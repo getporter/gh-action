@@ -1,0 +1,5 @@
+name: 'Setup Porter'
+description: 'Setup Porter for Use With Bundle Project'
+runs:
+  using: 'node12'
+  main: 'index.js'
