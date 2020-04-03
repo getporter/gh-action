@@ -1,5 +1,8 @@
 name: 'Setup Porter'
-description: 'Setup Porter for Use With Bundle Project'
+description: 'Install Porter to create and manage bundles'
+branding:
+  icon: user-check
+  color: purple
 runs:
   using: 'node12'
   main: 'index.js'
