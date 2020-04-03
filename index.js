@@ -4,7 +4,7 @@ const tc = require('@actions/tool-cache')
 async function run() {
     try {
         let porterVersion = core.getInput("porter_version");
-        const porterURL = `https://cdn.deislabs.io/porter/${porterVersion}/install-linux.sh`;
+        const porterURL = `https://cdn.porter.sh/${porterVersion}/install-linux.sh`;
         console.log(`Downloading Porter from ${porterURL}`);
         const porterInstallPath = await tc.downloadTool(`${porterURL}`);
         await exec.exec(`chmod`, [`+x`, `${porterInstallPath}`]);
