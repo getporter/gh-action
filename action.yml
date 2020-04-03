@@ -3,3 +3,8 @@ description: 'Setup Porter for Use With Bundle Project'
 runs:
   using: 'node12'
   main: 'index.js'
+inputs:
+  porter_version:
+    description: 'Specify which version of Porter to install. Any version from v0.18.1-beta.2 onwards is valid. If left blank, will default to latest.'
+    default: latest
+    required: false
